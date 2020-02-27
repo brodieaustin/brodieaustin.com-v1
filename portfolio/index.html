@@ -1,0 +1,22 @@
+---
+layout: base
+type: "portfolio"
+---
+
+<article class="portfolio">
+  <header>
+    <div class="container">
+      <h1>Portfolio</h1>
+      <p>I work hard to build modern, clean, and easy to use sites. I believe in taking time to talk to users to discover their needs and build sites that help people get things done.</p>
+    </div>
+  </header>
+  <section class="portfolio-section">
+    <div class="container">
+      <ul class="portfolio-sites">
+        {% for p in site.portfolio %}
+          {% include portfolio-item.html %}
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</article>

@@ -1,0 +1,27 @@
+.contact{
+  background: $primary-color;
+  overflow: hidden;
+  color: $white;
+
+  h3{
+    text-transform: uppercase;
+  }
+
+  p{
+    margin-bottom: 3rem;
+
+    @media screen and (min-width: 40rem){
+      float: left;
+      max-width: 70%;
+    }
+  }
+
+  .button{
+    color: $white;
+    border-color: $white;
+
+    @media screen and (min-width: 40rem){
+      float: right;
+    }
+  }
+}

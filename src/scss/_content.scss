@@ -1,0 +1,81 @@
+.content-header{
+  background-color: $secondary-color;
+  text-align: center;
+
+  h1{
+    max-width: 80%;
+    margin: auto;
+    font-size: 3.5rem;
+  }
+}
+
+.content-meta{
+  color: $font-color;
+  text-transform: uppercase;
+  color: lighten($font-color, 30%);
+
+  a{
+    color: inherit;
+  }
+}
+
+.content-body{
+  max-width: 38rem;
+  margin: auto;
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  ul{
+    list-style: square;
+  }
+
+  ul, ol{
+    padding-left: 1rem;
+    text-indent: .25rem;
+  }
+
+  ul li, ol li{
+    margin-bottom: .25rem;
+  }
+
+  blockquote{
+      margin: 2rem 0;
+      padding: 0 1.375rem ;
+      border-left: 6px solid $primary-color;
+      line-height: 1.3;
+      font-size: 1.5rem;
+      font-style: italic;
+      color: $primary-color;
+
+      p:first-of-type{
+        margin-top: 0;
+      }
+
+      p:last-of-type{
+        margin-bottom: 0;
+      }
+
+      a{
+        color: lighten($primary-color, 30%);
+      }
+    }
+}
+
+.embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+
+  iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

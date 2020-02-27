@@ -1,0 +1,25 @@
+name: Brodie Austin
+markdown: kramdown
+permalink: /posts/:title/
+baseurl: ""
+cssurl: /assets/css/
+imgurl: /assets/img/
+excerpt_separator: <!--more-->
+exclude: [README.markdown, node_modules, package.json, package-lock.json, gulpfile.js, src]
+collections:
+    portfolio:
+        output: true
+        permalink: /portfolio/:title/
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+      type: "portfolio"
+    values:
+      layout: portfolio

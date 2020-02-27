@@ -1,0 +1,22 @@
+.tags{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  li{
+    display: inline-block;
+    margin: .5rem .25rem;
+  }
+
+  a{
+    display: block;
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+    background-color: lighten($tertiary-color, 20%);
+    color: darken($primary-color, 20%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .75rem;
+  }
+}

@@ -1,0 +1,32 @@
+---
+layout: base
+body_class: homepage
+description: "My name is Brodie Austin. I am a freelance developer specializing in sites built with Craft CMS for small clients (and I'm a librarian)."
+---
+
+  <section class="hero-section">
+    <div class="container">
+      <p class="hero-text">Web Design <br> Web Development <br> User Experience</p>
+    </div>
+  </section>
+
+  <section class="portfolio-section">
+    <div class="container">
+      <ul class="portfolio-sites">
+        {% for p in site.portfolio %}
+          {% if p.featured == true %}
+            {% include portfolio-item.html %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <a href="{{ site.baseurl }}/portfolio/" class="button fancy">View More</a>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <h2>Let's work together</h2>
+      <p>I love helping people solve problems with websites. I can help you with scoping a project, user research, design, prototyping, testing, and development.</p>
+      <a href="{{ site.baseurl }}/contact/" class="button fancy">Contact Me</a>
+    </div>
+  </section>

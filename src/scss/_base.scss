@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family:'Chivo', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3{
+  margin: 0 0 1rem 0;
+  font-weight: 900;
+  line-height: 1.2;
+  color: $primary-color;
+}
+
+a{
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover{
+    opacity: .7;
+    transition: all .2s linear;
+  }
+
+  &.more{
+    &:after{
+      content: "\2192";
+    }
+  }
+}
+
+.bio-image{
+  width: 20rem;
+  margin: auto;
+  text-align: center;
+
+  img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,11 @@
+<!--grabs n amount of posts as defined by post_limit in yaml-->
+<div class="previous-posts">
+  <ul class="posts">
+    {% for post in site.posts offset:include.offset limit:page.post_limit %}
+      <li>
+        <span class="previous-post-date">{{ post.date | date: "%x" }}</span>
+        <a href="{{ post.url }}" class="previous-post-title">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

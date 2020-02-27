@@ -1,0 +1,47 @@
+.homepage{
+  text-align: center;
+}
+
+.hero-section{
+  .container{
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.hero-text{
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $primary-color;
+}
+
+.portfolio-section{
+  background-color: $secondary-color;
+
+  .container{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.contact-section{
+  .container{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+
+  p{
+    max-width: 32rem;
+    margin: 0 auto 2rem auto;
+    font-size: 1.125rem;
+  }
+}

@@ -1,0 +1,24 @@
+---
+layout: content
+title: 'Contact'
+description: 'Let\s talk about how we can work together.'
+---
+
+<section class="form">
+    <form action="//formspree.io/hello@brodieaustin.com" method="POST">
+      <input type="hidden" name="_next" value="{{ site.baseurl }}/contact/thanks/" />
+      <div class="control-group wide-controls">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+      </div>
+      <div class="control-group wide-controls">
+        <label for="replyto">Email address</label>
+        <input type="email" name="_replyto" id="replyto">
+      </div>
+      <div class="control-group wide-controls">
+        <label for="body">What do you want to work on?</label>
+        <textarea name="body" rows="20"></textarea>
+      </div>
+      <input type="submit" value="Send" class="button big submit">
+    </form>
+</section>

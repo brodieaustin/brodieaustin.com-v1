@@ -1,0 +1,42 @@
+.site-footer{
+  background-color: darken($primary-color, 20%);
+  text-align: center;
+
+  .container{
+    padding: 2rem;
+  }
+}
+
+.nav{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li{
+    display: inline-block;
+    color: $white;
+
+    &:after{
+      content: "|";
+      display: inline-block;
+      padding: 0 .5rem;
+    }
+
+    &:first-child{
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    &:last-child:after{
+      content:"";
+    }
+
+    &:first-child a{
+      text-transform: uppercase;
+    }
+
+    a{
+      color: $white;
+    }
+  }
+}
