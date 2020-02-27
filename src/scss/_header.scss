@@ -36,7 +36,11 @@
 }
 
 .homepage .brand svg{
-  width: 8.75rem;
+  width: 6rem;
+
+  @media screen and (min-width: 30rem){
+    width: 8.75rem;
+  }
 }
 
 .homepage .site-header{

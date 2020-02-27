@@ -13,22 +13,19 @@
   padding: 0;
 
   li{
-    display: inline-block;
+    margin-bottom: 1rem;
     color: $white;
 
-    &:after{
-      content: "|";
+    @media screen and (min-width: 30rem){
       display: inline-block;
-      padding: 0 .5rem;
+      margin-bottom: 0;
+      margin-left: .5rem;
+      margin-right: .5rem;
     }
 
     &:first-child{
       text-transform: uppercase;
       letter-spacing: .5px;
-    }
-
-    &:last-child:after{
-      content:"";
     }
 
     &:first-child a{

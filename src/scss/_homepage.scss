@@ -5,33 +5,46 @@
 .hero-section{
   .container{
     padding-top: 2rem;
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
+
+    @media screen and (min-width: 30rem){
+      padding-bottom: 8rem;
+    }
   }
 }
 
 .hero-text{
   margin: 0;
-  font-size: 4rem;
+  font-size: 8vw;
   font-weight: 900;
   line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: $primary-color;
+
+  @media screen and (min-width: 30rem){
+    font-size: 4rem;
+  }
 }
 
 .portfolio-section{
   background-color: $secondary-color;
 
   .container{
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    @media screen and (min-width: 30rem){
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
   }
 }
 
 .contact-section{
   .container{
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+
+    @media screen and (min-width: 30rem){
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
   }
 
   h2{

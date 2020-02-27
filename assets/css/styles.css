@@ -12,7 +12,7 @@ body {
 h1, h2, h3 {
   margin: 0 0 1rem 0;
   font-weight: 900;
-  line-height: 1.2;
+  line-height: 1.1;
   color: #326273; }
 
 a {
@@ -36,7 +36,10 @@ a {
 .container {
   max-width: 64rem;
   margin: 0 auto;
-  padding: 4rem 2rem; }
+  padding: 2rem 2rem 4rem; }
+  @media screen and (min-width: 30rem) {
+    .container {
+      padding: 4rem 2rem; } }
 
 .site-header {
   background-color: #E6ECEE;
@@ -64,7 +67,10 @@ a {
     transition: all .5s ease-in-out; }
 
 .homepage .brand svg {
-  width: 8.75rem; }
+  width: 6rem; }
+  @media screen and (min-width: 30rem) {
+    .homepage .brand svg {
+      width: 8.75rem; } }
 
 .homepage .site-header {
   padding-top: 2rem; }
@@ -84,17 +90,17 @@ a {
   margin: 0;
   padding: 0; }
   .nav li {
-    display: inline-block;
+    margin-bottom: 1rem;
     color: #fff; }
-    .nav li:after {
-      content: "|";
-      display: inline-block;
-      padding: 0 .5rem; }
+    @media screen and (min-width: 30rem) {
+      .nav li {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-left: .5rem;
+        margin-right: .5rem; } }
     .nav li:first-child {
       text-transform: uppercase;
       letter-spacing: .5px; }
-    .nav li:last-child:after {
-      content: ""; }
     .nav li:first-child a {
       text-transform: uppercase; }
     .nav li a {
@@ -105,26 +111,34 @@ a {
 
 .hero-section .container {
   padding-top: 2rem;
-  padding-bottom: 8rem; }
+  padding-bottom: 4rem; }
+  @media screen and (min-width: 30rem) {
+    .hero-section .container {
+      padding-bottom: 8rem; } }
 
 .hero-text {
   margin: 0;
-  font-size: 4rem;
+  font-size: 8vw;
   font-weight: 900;
   line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #326273; }
+  @media screen and (min-width: 30rem) {
+    .hero-text {
+      font-size: 4rem; } }
 
 .portfolio-section {
   background-color: #E6ECEE; }
-  .portfolio-section .container {
-    padding-top: 8rem;
-    padding-bottom: 8rem; }
+  @media screen and (min-width: 30rem) {
+    .portfolio-section .container {
+      padding-top: 8rem;
+      padding-bottom: 8rem; } }
 
-.contact-section .container {
-  padding-top: 8rem;
-  padding-bottom: 8rem; }
+@media screen and (min-width: 30rem) {
+  .contact-section .container {
+    padding-top: 8rem;
+    padding-bottom: 8rem; } }
 
 .contact-section h2 {
   font-size: 2.5rem;
@@ -141,7 +155,10 @@ a {
   .content-header h1 {
     max-width: 80%;
     margin: auto;
-    font-size: 3.5rem; }
+    font-size: 2.5rem; }
+    @media screen and (min-width: 30rem) {
+      .content-header h1 {
+        font-size: 3.5rem; } }
 
 .content-meta {
   color: #333;
@@ -194,15 +211,24 @@ a {
 .portfolio-sites {
   list-style: none;
   margin: 0 0 3rem;
-  padding: 0;
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: 50% 50%; }
+  padding: 0; }
+  @media screen and (min-width: 30rem) {
+    .portfolio-sites {
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: 1fr 1fr; } }
 
 .portfolio-site-preview {
   width: 100%;
+  margin-bottom: 2rem;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 1rem; }
+  @media screen and (min-width: 30rem) {
+    .portfolio-site-preview {
+      margin-bottom: 0; } }
+  .portfolio-site-preview .thumbnail {
+    display: block;
+    width: 100%; }
   .portfolio-site-preview img {
     max-width: 100%;
     height: auto;
@@ -251,11 +277,13 @@ a {
   display: table-cell;
   width: 20%;
   padding-right: 1rem;
+  padding-bottom: .5rem;
   font-size: .875rem;
   border-bottom: 1px solid #e6e6e6; }
 
 .previous-posts .previous-post-title {
   display: table-cell;
+  padding-bottom: .5rem;
   border-bottom: 1px solid #e6e6e6;
   text-align: left; }
 
